@@ -31,6 +31,12 @@ http.createServer((req, res) => {
             res.write(data);
             res.end()
         })
+    }else if (req.url == '/emmet.png') {
+        fs.readFile('emmet.png', 'binary', function (err, data) {
+            res.writeHead(200, {'Content-Type': 'image/png'});
+            res.write(new buffr);
+            res.end()
+        })
     }
 }).listen(port, hostname, () => {
     console.log('Server running at ' + hostname);
