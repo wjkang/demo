@@ -34,8 +34,10 @@ http.createServer((req, res) => {
     }else if (req.url == '/emmet.png') {
         fs.readFile('emmet.png', 'binary', function (err, data) {
             res.writeHead(200, {'Content-Type': 'image/png'});
-            res.write(new buffr);
-            res.end()
+            setTimeout(function () {
+                res.write(new Buffer(data).toString(), "binary");
+                res.end()
+            },2000);
         })
     }
 }).listen(port, hostname, () => {
