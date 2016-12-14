@@ -37,7 +37,7 @@ http.createServer((req, res) => {
             setTimeout(function () {
                 res.write(new Buffer(data).toString(), "binary");
                 res.end()
-            },2000);
+            },10000);
         })
     }
 }).listen(port, hostname, () => {
