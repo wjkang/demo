@@ -1,0 +1,14 @@
+body{
+    background-color: silver;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    .list{
+        display: block;
+        position: relative;
+        .item{
+            position: absolute;
+        }
+    }
+}
