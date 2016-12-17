@@ -4,11 +4,16 @@
   "description": "gulp-base",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp test"
   },
   "keywords": [
     "gulp-base"
   ],
   "author": "jayce",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0"
+  }
 }
