@@ -1,3 +1,3 @@
+document.getElementsByTagName("body")[0].style.backgroundColor="black";
 
-    document.getElementsByTagName("body")[0].style.backgroundColor="black";
 
